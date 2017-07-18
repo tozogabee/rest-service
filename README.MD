@@ -47,4 +47,4 @@ server.port=8999
 
 3/b. Or add some configs via JVM properties:
 
-![Run configuration](readme_resources/jvm_config.png)
+![Run configuration](readme-resources/jvm_config.png)
