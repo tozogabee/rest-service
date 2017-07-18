@@ -150,8 +150,19 @@ Try it:
 ]
 ```
 
+## GoT Girls find by id
+
+Created a new endpoint which returns the requested GotGirl.
+
+```java
+
+```
+
 # Useful notes
 
 ```find .git```: list all files in .git folder
 
 Check Joda Time and the java Time API!!!
+
+
+Check some useful [Spring web annotation](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/bind/annotation/package-summary.html)!
