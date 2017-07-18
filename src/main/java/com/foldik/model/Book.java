@@ -5,11 +5,12 @@ import java.time.LocalDate;
 public class Book {
 
     private String title;
-    private LocalDate publicationDate;
 
-    public Book(String title, LocalDate publicationDate) {
+    public Book() {
+    }
+
+    public Book(String title) {
         this.title = title;
-        this.publicationDate = publicationDate;
     }
 
     public String getTitle() {
@@ -20,11 +21,10 @@ public class Book {
         this.title = title;
     }
 
-    public LocalDate getPublicationDate() {
-        return publicationDate;
-    }
-
-    public void setPublicationDate(LocalDate publicationDate) {
-        this.publicationDate = publicationDate;
+    @Override
+    public String toString() {
+        return "Book{" +
+                "title='" + title + '\'' +
+                '}';
     }
 }

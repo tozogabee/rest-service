@@ -4,13 +4,16 @@ import java.util.List;
 
 public class GotGirl {
 
-    private int id;
+    private Integer id;
     private String name;
     private String chestSize;
     private int age;
     private List<Book> books;
 
-    public GotGirl(int id, String name, String chestSize, int age, List<Book> books) {
+    public GotGirl() {
+    }
+
+    public GotGirl(Integer id, String name, String chestSize, int age, List<Book> books) {
         this.id = id;
         this.name = name;
         this.chestSize = chestSize;
@@ -18,11 +21,11 @@ public class GotGirl {
         this.books = books;
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -56,5 +59,16 @@ public class GotGirl {
 
     public void setBooks(List<Book> books) {
         this.books = books;
+    }
+
+    @Override
+    public String toString() {
+        return "GotGirl{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", chestSize='" + chestSize + '\'' +
+                ", age=" + age +
+                ", books=" + books +
+                '}';
     }
 }
