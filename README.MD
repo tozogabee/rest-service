@@ -299,6 +299,50 @@ rest.service.try.something.url=http://www.something.hu
 
 ## Return Got Girls in XML
 
+Create a wrapper class for the ```List<GotGirl>```.
+Make sure each POJO has a default constructor.
+
+```java
+package com.foldik.model;
+
+import javax.xml.bind.annotation.XmlRootElement;
+import java.util.List;
+
+@XmlRootElement
+public class GotGirlList {
+
+    private List<GotGirl> gotGirls;
+
+    public GotGirlList() {
+    }
+
+    public GotGirlList(List<GotGirl> gotGirls) {
+        this.gotGirls = gotGirls;
+    }
+
+    public List<GotGirl> getGotGirls() {
+        return gotGirls;
+    }
+
+    public void setGotGirls(List<GotGirl> gotGirls) {
+        this.gotGirls = gotGirls;
+    }
+}
+```
+
+Set the produces property in the ```@RequestMapping``` annotation.
+
+```java
+@RequestMapping(value = "/gotGirls", produces ={"application/json", "application/xml"})
+public GotGirlList listAllGotGirls() {
+    return new GotGirlList(gotGirls);
+}
+```
+
+Try it:
+
+Get in xml with Postman
+
 
 
 
