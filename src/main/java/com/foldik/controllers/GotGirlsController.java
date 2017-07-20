@@ -1,6 +1,7 @@
 package com.foldik.controllers;
 
 import com.foldik.model.GotGirl;
+import com.foldik.model.GotGirlList;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,9 +21,9 @@ public class GotGirlsController {
         this.gotGirls = gotGirls;
     }
 
-    @RequestMapping("/gotGirls")
-    public List<GotGirl> listAllGotGirls() {
-        return gotGirls;
+    @RequestMapping(value = "/gotGirls", produces = {"application/json", "application/xml"})
+    public GotGirlList listAllGotGirls() {
+        return new GotGirlList(gotGirls);
     }
 
     @RequestMapping("/gotGirl/{id}")

@@ -297,6 +297,9 @@ server.port=7567
 rest.service.try.something.url=http://www.something.hu
 ```
 
+## Return Got Girls in XML
+
+
 
 
 # Useful notes

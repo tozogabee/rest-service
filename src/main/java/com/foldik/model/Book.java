@@ -1,7 +1,5 @@
 package com.foldik.model;
 
-import java.time.LocalDate;
-
 public class Book {
 
     private String title;
