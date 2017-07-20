@@ -48,7 +48,7 @@ public class AppConfig {
     {
         List<Owner> ownerList=new ArrayList<>();
         ownerList.add(new Owner("Toth Gabor",30,new Money(new BigDecimal("25000000"),0,"HUF"),new Money(new BigDecimal("0"),0,"HUF"), Arrays.asList(new Phone(0036,20,1234567)),Arrays.asList(new Car("Mercedes","S55 AMG",2017,4356,new Color(0,0,0),new Color(0,0,0)))));
-        ownerList.add(new Owner("Donald Trump",72,new Money(new BigDecimal("5000000000"),0,"USD"),new Money(new BigDecimal("650000000"),0,"USD"), Arrays.asList(new Phone(0036,20,1234567)),Arrays.asList(new Car("Rolls Royce","S55 AMG",2017,4356,new Color(0,0,0),new Color(0,0,0)))));
+        ownerList.add(new Owner("Donald Trump",72,new Money(new BigDecimal("5000000000"),0,"USD"),new Money(new BigDecimal("650000000"),0,"USD"), Arrays.asList(new Phone(0036,20,1234567)),Arrays.asList(new Car("Rolls Royce","Phantom Coupé",2017,4356,new Color(0,0,0),new Color(0,0,0)),new Car("Maserati","Quattroporte",2017,5987,new Color(0,0,0),new Color(0,0,0)))));
 
         return ownerList;
     }
