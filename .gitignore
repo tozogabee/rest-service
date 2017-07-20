@@ -1,3 +1,5 @@
 .idea/
 target/
 *.iml
+src/main/java/com/foldik/controllers/task/*
+src/main/java/com/foldik/model/task/*
